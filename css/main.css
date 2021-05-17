@@ -1,0 +1,47 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+header {
+  width: 100 vw;
+  height: 1.5em;
+}
+
+header #title {
+  font-size: 35px;
+}
+
+header ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 1.5em 3em 0 0;
+  padding-left: 2.5em;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+.game {
+  margin: 0 auto;
+  width: 250px;
+  height: 100px;
+  border: 1px solid green;
+}
+
+.game form {
+  text-align: center;
+  padding-top: 2em;
+}
+/*# sourceMappingURL=main.css.map */
