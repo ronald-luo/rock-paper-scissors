@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap");
 *,
 *:before,
 *:after {
@@ -7,8 +8,8 @@
 
 body {
   color: white;
-  background-color: grey;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #242831;
+  font-family: "Poppins", sans-serif;
   height: 100vh;
 }
 
@@ -34,14 +35,32 @@ header a {
 }
 
 .game {
+  position: absolute;
+  left: 0;
+  top: 20%;
   margin: 0 auto;
-  width: 250px;
-  height: 100px;
-  border: 1px solid green;
+  width: 100vw;
+  height: 20vw;
 }
 
 .game form {
   text-align: center;
   padding-top: 2em;
+}
+
+.score {
+  left: 50%;
+  top: -20%;
+  position: absolute;
+}
+
+.display-move {
+  padding: 2.5em 0 0 0;
+  text-align: center;
+  color: #9c9c9c;
+}
+
+img {
+  height: 150px;
 }
 /*# sourceMappingURL=main.css.map */
