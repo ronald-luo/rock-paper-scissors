@@ -7,6 +7,13 @@ $color_4: #bb23c7;
 $padding: 4em;
 $font1: "Poppins", sans-serif;
 $font2: "Lora", serif;
+$phone: 840px;
+
+@mixin phone {
+  @media (max-width: #{$phone}) {
+    @content;
+  }
+}
 
 *,
 *:before,
@@ -21,7 +28,7 @@ body {
   height: 100vh;
 }
 
-header {
+nav {
   width: 100vw;
   height: 1.5em;
 
@@ -34,6 +41,10 @@ header {
     display: inline-block;
     margin: 1.5em 3em 0 0;
     padding-left: 2.5em;
+    @include phone {
+      margin: 0 10vw 0 0;
+      padding-left: 0;
+    }
   }
 
   a {
@@ -49,10 +60,18 @@ header {
   margin: 0 auto;
   width: 100vw;
   height: 20vw;
-  //border: 1px solid green;
   form {
     text-align: center;
     padding-top: 2em;
+  }
+  button {
+    max-width: 100%;
+    height: auto;
+    @include phone {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 

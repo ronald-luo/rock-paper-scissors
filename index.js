@@ -15,6 +15,7 @@
         })
     })
 })()
+
 function displayMove (pc, cc) {
     let div = document.createElement('div')
     let container = document.querySelector('#display-move')
