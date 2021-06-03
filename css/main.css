@@ -18,6 +18,14 @@ nav {
   height: 1.5em;
 }
 
+@media (max-width: 840px) {
+  nav {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+  }
+}
+
 nav #title {
   font-size: 35px;
 }
@@ -55,19 +63,6 @@ nav a {
   padding-top: 2em;
 }
 
-.game button {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 840px) {
-  .game button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .score {
   left: 50%;
   top: -20%;
@@ -81,6 +76,10 @@ nav a {
 }
 
 img {
+  border-radius: 10%;
+  margin: 0 0.5em 0 0;
+  padding: 1em;
   height: 150px;
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */
